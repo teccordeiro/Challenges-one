@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-azul-0A3871:#0A3871;
+    --cor-branca:#ffffff;
+    --inter:"Inter", sans-serif;
+    --fondo:  #F3F5FC;
+}
+
+main{
+    background: var(--fondo);
+    display: flex;
+    
+    gap:40px;
+}
+.imagem-logo{
+    padding-top: 20px;
+}
+.conteudo{
+   
+    display: flex;
+    padding-left: 20px;;
+    flex-direction: column;
+    padding-top: 40px;
+    width: 70%;
+    gap: 320px;
+}
+
+.seuTexto{
+    border: none;
+    background: var(--fondo);
+    color:var(--cor-azul-0A3871);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--inter);
+}
+.seuTexto:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.seuTexto::placeholder{
+    border: none;
+    background: var(--fondo);
+    color:var(--cor-azul-0A3871);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--inter);
+}
+
+.div-botoes{
+    width: 100%;
+    height: 100px;
+}
+.botao-Criptografar{
+    
+    font-size: 19px;;
+    gap: 8px;
+    padding: 24px;
+    width: 280px;
+    border-radius: 24px;
+    background-color: var(--cor-azul-0A3871);
+    text-align: center;
+    color:var(--cor-branca);
+}
+.botao-Descriptografar{
+    font-size: 19px;
+    gap: 8px;
+    padding: 24px;
+    width: 280px;
+    border-radius: 24px;
+    background-color: var(--cor-azul-0A3871);
+    text-align: center;
+    color:var(--cor-branca);
+}
+.barra-direita{
+    padding-top: 30px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--cor-branca);
+    gap: 16px;
+    width: 30%;
+    
+
+}
+#imagem-lateral{
+    /* display: none;*/
+}
+.barra-direita__texto{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    gap: 16px;
+    /*     display: none;*/
+}
+.barra-direita strong{
+    font-family: var(--inter);
+    font-size: 24px;
+    font-weight: 700;
+}
+.barra-direita p{
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+}
+.texto-usuario{
+    display: flex;
+    flex-direction: column;
+    gap:265px;
+    display: none;
+}
+.texto-usuario-paragrafo-criptografado{
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: 24px;
+    color:#495057;
+    top: -120px;
+}
+.botao-copiar{
+    border-radius: 24px;
+    background-color: var(--cor-azul-0A3871);
+    color:var(--cor-branca);
+    height: 67px;
+    font-family: var(--inter);
+    position: relative;
+    
+}
+footer{
+    text-align: center;
+    font-family: var(--inter);
+    
+}

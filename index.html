@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script  src="./assets/js/scripts.js"></script>
+    <title> Challenge - Decodificador</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="./assets/Logo.png" alt="logo em formato da letra" class="imagem-logo"/>
+
+        </section>
+
+        <section class="conteudo">
+            <textarea placeholder="Digite seu texto" class="seuTexto" id="texto-digitado" onclick="limparTextArea()"></textarea>
+            
+            <div class="div-botoes">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <button class="botao-Criptografar" onclick="exibirTextoDigitado();">Criptografar</button>
+                <button class="botao-Descriptografar" onclick="exibirTextoDescriptografar()">Descriptografar</button>
+            </div>
+          
+        </section>
+        <section class="barra-direita" id="barra-direita">
+            <img src="./assets/High quality products 1 1.svg" alt="desenho de uma pessoa olhando um diamante com uma lupa" id="imagem-lateral">
+            <div class="barra-direita__texto" id="barra-direita__texto">
+                <strong id="nenhumaMensagem">
+                    Nenhuma mensagem encontrada
+                </strong>
+                <p id="texto_paragrafo">
+                    Digite um texto que você deseja<br> criptografar ou descriptografar.
+                </p>
+            </div>
+            <div class="texto-usuario" id="texto-usuario">
+                <p class="texto-usuario-paragrafo-criptografado" id="texto-usuario-paragrafo-criptografado"></p>
+
+                <button class="botao-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+        Desenvolvido por André 
+    </footer>
+</body>
+</html>
